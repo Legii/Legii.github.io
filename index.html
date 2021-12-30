@@ -1,212 +1,96 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Kochanowski</title>
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="left">
-        <h1>Jan Kochanowski herbu Korwin</h1>
-        <p>
-            <h4>ur. ok 1530 w Sycynie ❋</h4> <h4> zm. 22.08 1584 Lublin 🕇</h4>
-        </p>
-        <section id="education">
-            <h2>Wykształcenie</h2>
-         
-                <h3>Akademia Krakowska 1544-1547r</h3>
-             
-                <h3>Uniwersytet Albrechta w Królewcu 1551-1552 i 1555-1556r</h3>
-                <h3>Uniwersytet Padewski 1552 – 1555r, 1556-1557r i 1558-1559</h3>
-            </section>
-    </section>
-   
-   <section id="right">
-        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Jan_Kochanowski.png" alt="Zdjęcie">
-        <h4 id="source">Źródło: Wikipedia</h4>
+    <header>
+        <div>
+            <div class="element">Witaj</div>
+            <div class="element">sekcji</div>
+            <div class="element">tematyce</div>
+        </div>
+        <div>
+            <div class="element">w</div>
+            <div class="element">systemie</div>
+            <div class="element">o</div>
+            <div class="element">ciekawej</div>
+        </div>
+        <div>
+            <div class="element">nowym</div>
+            <div class="element">roznej</div>
+        </div>
+    </header>
 
-    </section>  
-    <section id="experience">
-        <h2>Doświadczenie i piastowane stanowiska</h2>
-        <ul>
-            <li>Polski Poeta</li>
-            <li>Tłumacz</li>
-            <li>Prepozyt kapituły katedralnej w latach 1564-1574, </li>
-            <li>Poeta nadworny Stefana Batorego w 1579 r</li>
-            <li>Sekretarz królewski Zygmunta Augusta</li>
-            <li>Wojski sandomierski w latach 1579–1584</li>
-        
-        </ul>      
-       
+    <h2>Sekcja zdjeciowa</h2>
+    <section id="images">
+        <img src="img/vil1.png" alt="villager">
+        <img src="img/bread.png" alt="bread">
+        <img src="img/vil2.png" alt="villager">
+        <img src="img/marchewka.png" alt="carrot">
+        <img src="img/vil3.png" alt="villager">
     </section>
-    <section id="creativity">
-        <h2>Najważniejsza twórczość</h2>
-        <ul>
-            <li><i>Pieśni</i></li>
-            <li>Fraszki min: <i>Na Lipę</i>, <i>Na Zdrowie</i> </li>
-            <li><i>Treny</i> </li>
-            <li><i>Odprawa posłów greckich</i></li>
-            <li><i>Satyr albo Dziki mąż </i> </li>
-            <li><i>Psałterz Dawidów</i></li>
-         
-        
-        </ul>      
-       
+    <h2>Sekcja numerowa</h2>
+    <section id="numerowa">
+        <div style="order:3" class="element">1</div>
+        <div style="order:2" class="element">2</div>
+        <div style="order:4" class="element">3</div>
+        <div style="order:7" class="element">4</div>
+        <div style="order:5"class="element">5</div>
+        <div style="order:6" class="element">6</div>
+        <div style="order:7"class="element">7</div>
+        <div style="order:8"class="element">8</div>
+        <div style="order:1"class="element">9</div>
+
     </section>
-    <section id="contact">
-        <h2>Dane Kontaktowe</h2>
-        <h3>Adres: Dwór w Czarnolesie 1 </h3>
-        <h3>Numer Gołębia Pocztowego: 22081584</h3>
-        <h3>Najbliższy punkt wymiany koni: Karczma w Czarnolesie </h3>
+    <h2>Sekcja growa</h2>
+    <section class="gry">
+        <div class="element" style="width:35%">Najlepsza gra roku</div>
+        <div class="element" style="width:60%;">Minecraft?</div>
     </section>
+    <section class="gry">
+        <div class="element" style="width:60%;">Najgorsza gra roku</div>
+        <div class="element"style="width:35%">Hmmmmmmmmm</div>
+    </section>
+
+    <h2>Sekcja prostego menu</h2>
+    <section class="menu">
+        <a href="#" class="element">Strona Glowna</a>
+        <a href="#" class="element">Uslugi</a>
+        <a href="#" class="element">Informacje</a>
+    </section>
+    <h2>Sekcja kierunkowa</h2>
+    <section id="kierunkowa">
+      
+        <div class="vertical">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+        <div class="horisontal">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+
+        </div>
+        <div class="horisontal" style="transform: scaleX(-1)">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+
+        </div>
+        <div class="vertical" style="transform: scaleY(-1);">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+    </section>
+
 </body>
-
-<style>
-    p {
-        padding-top: -5%;
-    }
-    h4 {
-        display: inline-block;
-        width:45%;
-        margin:none;
-        padding: none;
-        margin-top: -3;
-        margin-left: none;
-        margin-right: none;
-        padding-left: none;
-        padding-top: none;
-        text-align: center;
-        font-size:1.5vw;
-
-    }
-
-    #image {
-        width:40%;
-        position: absolute;
-        left:30%;
-        top:15%;
-        border-radius: 50%;
-        border:15px solid black;
-        box-sizing: border-box;
-
-    }
-
-    h2 {
-        font-size:2.5vw;
-        text-align: center;
-        border-bottom:black dashed 5px;
-        border-radius: 15%;
-    }
-    h1 {
-        font-size:4vw;
-        text-align: center;
-        box-sizing: content-box;
-        padding: -5%;
-    }
-
-
-    #left,#right {
-       
-        height:50%;
-    }
-    #left {
-        position: absolute;
-        left:0px;
-        top:0px;
-        width:60%;
-    }
-    #right {
-        position: absolute;
-        width:40%;
-        top:0px;
-        left:60%;
-        height:75vh;
-        background-color: lightgrey;
-        border-radius:3% 0% 3% 50%;
-        border-bottom:black dashed 5px;
-        border-left:black dashed 5px;
-        box-sizing: border-box;
-    }
-    h3 {
-
-        font-size:2vw;
-        text-align: center;
-    }
- 
-    #experience {
-        position:absolute;
-        left:0px;
-        top:75vh;
-        width:100%;
-    }
-
-    li {
-        font-weight: bold;
-        font-size:1.8vw; 
-    }
-    ul {
-        width:90%;
-        position:relative;
-        left:5%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #creativity {
-        position:absolute;
-        left:0px;
-        top:100vh;
-        width:100%;
-    }
-    #contact {
-        position:absolute;
-        left:0px;
-        top:135vh;
-        width:100%;
-        border-radius:none;
-        border:none;
-        background-color: grey;
-        box-sizing: content-box;
-        padding:0px;
-        padding-top:0px;
-        
-       
-    }
-    #contact  h2{
-        background-color: black;
-            border-bottom:none;
-            border-radius:0%;
-            padding:2%;
-            color:white;
-            box-sizing: border-box;
-            margin-top:-2%;
-    }
-    #contact h3 {
-        text-align:center
-    }
-
-    
-    #source {
-        position:absolute;
-        bottom:10%;
-        text-align: center;
-        left:0px;
-        width:100%;
-    }
-
-    #image:hover {
-        border-radius:40%;
-    }
-    h1:hover {
-        font-size: 4.1vw;;
-    }
-    h3:hover,h4:hover {
-        font-size:2.1vw;
-    }
-    h2:hover {
-        font-size:2.6vw;
-    }
-    li:hover {
-        font-size:1.9vw;
-    }
-</style>
 </html>
