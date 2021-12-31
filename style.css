@@ -15,7 +15,8 @@
 body {
     background-image: url("img/background.png");
     background-attachment: fixed;
-
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
@@ -134,6 +135,7 @@ h2 {
     justify-content: space-between;
     gap:2%;
     height:15vh;
+    
     width:80%;
     margin-left:10%;
 }
@@ -141,17 +143,24 @@ h2 {
     width:80%;
     margin-left:10%;
     height:10vh;
+    min-height: 50px;
     padding:10px;
     font-size:2vw;
 }
 .menu .element {
-   
+   max-height: 100px;
     width:100%;
     align-items: stretch;
     text-decoration: none;
     font-size:2vw;
     /*Animacje tu jakieś */
 
+}
+
+.menu >.element:hover {
+    font-weight: bolder;
+    color:white !important;
+    text-shadow: black 0.5vw 0.5vw;
 }
 
 #kierunkowa {
@@ -195,4 +204,29 @@ display:flex;
 }
 #kierunkowa> div.horisontal > .element:first-child {
     transform: rotate(45deg);
+}
+
+.wlasna {
+    width:100%;
+
+    display: flex;
+    flex-direction: row;
+    
+    gap:none;
+}
+
+
+.wlasna .element {
+    background-size: cover;
+    width:5vw;
+    height:5vw;
+
+}
+
+
+.wlasna .element:nth-child(even) {
+    background-image: url("img/diax.png");
+}
+.wlasna .element:nth-child(odd) {
+    background-image: url("img/eme.png");
 }
