@@ -1,8 +1,8 @@
 let names = ["Ola", "Andrzej", "JJ", "Krzysiek", "Nina"]
 let round = 0;
 const layer_text = document.getElementById("layer")
-const round_text = dochment.getElementById("round")
-und_text
+const round_text = douhment.getElementById("round")
+
 const new_round = function() {
     round++
     alert(round)
