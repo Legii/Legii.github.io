@@ -5,8 +5,7 @@ const round_text = document.getElementById("round")
 
 const new_round = function() {
     round++
-    alert(round_text
-)
+    alert(round_text)
     round_text.innerText = "Runda " + round
 
 
