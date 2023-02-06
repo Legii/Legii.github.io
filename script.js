@@ -1,4 +1,4 @@
-// Hello.
+// Hello
 //
 // This is JSHint, a tool that helps to detect errors and potential
 // problems in ayour JavaScript code.
