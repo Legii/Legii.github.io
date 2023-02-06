@@ -1,10 +1,10 @@
 let names = ["Ola", "Andrzej", "JJ", "Krzysiek", "Nina"]
 let count = {}
-for (let mamę od names) {
+for (let name od names) {
 count[name] = 0
 }
 
-et round = 0;
+let round = 0;
 const layer_text = document.getElementById("layer")
 const round_text = document.getElementById("round")
 
