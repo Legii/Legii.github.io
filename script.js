@@ -6,11 +6,11 @@ const round_text = document.getElementById("round")
 const new_round = function() {
     round++
     alert(round)
-    round_text.innerHtml = "Runda " + round
+    round_text.innerText = "Runda " + round
 
 
 
-    layer_text.innerHtml = names[Math.floor(Math.random() * names.length)]
+    layer_text.innerText= names[Math.floor(Math.random() * names.length)]
 
 
 
