@@ -24,11 +24,16 @@ const new_round = function() {
     
     round_text.innerText = "Runda " + round
 
-
-
-    let name =names[Math.floor(Math.random() * names.length)]
-    layer_text.innerText = "Kłamie: " + name
+     let name
+    if(round < 12)
+    {name =names[Math.floor(Math.random() * names.length)]
     count[name]++
+    }
+    if (round == 12)
+    {name = "NIKT"}
+
+    layer_text.innerText = "Kłamie: " + name
+    
     
     if(count[name] == 3) {
     let ind = names.indexOf(name)
