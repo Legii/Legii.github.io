@@ -5,6 +5,7 @@ const round_text = dochment.getElementById("round")
 und_text
 const new_round = function() {
     round++
+    alert(round)
     round_text.innerHtml = "Runda " + round
 
 
