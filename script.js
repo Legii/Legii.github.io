@@ -1,6 +1,6 @@
 let names = ["Ola", "Andrzej", "JJ", "Krzysiek", "Nina"]
 let count = {}
-for (let name od names) {
+for (name od names) {
 count[name] = 0
 }
 
