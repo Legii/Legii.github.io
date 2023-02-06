@@ -10,7 +10,7 @@ const round_text = document.getElementById("round")
 
 const new_round = function() {
     round++
-    alert(round_text)
+    
     round_text.innerText = "Runda " + round
 
 
@@ -18,6 +18,7 @@ const new_round = function() {
     let name =names[Math.floor(Math.random() * names.length)]
     layer_text.innerText = "Kłamie: " + name
     count[name]++
+    alert(count[name])
     if(count[name] == 3) {
     let ind = names.indexOf(name)
     names.splice(ind,1)
